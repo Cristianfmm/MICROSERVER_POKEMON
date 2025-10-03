@@ -94,3 +94,8 @@ http://pokemon-frontend-cristian-finandina.s3-website.us-east-2.amazonaws.com
 ### Backend (Node/Express en Elastic Beanstalk):
 
 http://pokemon-backend-env.eba-pgw9vanj.us-east-2.elasticbeanstalk.com
+
+---
+
+### Corriendo AWS
+[![Lista de Pokémon](./capturas-pruebas/VERIFICACION_AWS.png)](./capturas-pruebas/VERIFICACION_AWS.png)
