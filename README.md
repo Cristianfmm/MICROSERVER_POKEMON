@@ -65,6 +65,20 @@ GET /pokemon/:name → Detalle de un Pokémon.
 
 # Capturas
 
+### Corriendo backend
+[![Lista de Pokémon](./capturas-pruebas/CORRIENDO_BACKEND.png)](./capturas-pruebas/CORRIENDO_BACKEND.png)
+
+### Corriendo fronend
+[![Lista de Pokémon](./capturas-pruebas/CORRIENDO_FRONTEND.png)](./capturas-pruebas/CORRIENDO_FRONTEND.png)
+
 ### Lista de Pokémon
 [![Lista de Pokémon](./capturas-pruebas/RESPUESTA1.png)](./capturas-pruebas/RESPUESTA1.png)
+
+### Corriendo TEST
+[![Lista de Pokémon](./capturas-pruebas/TEST.png)](./capturas-pruebas/TEST.png)
+
+### Corriendo FILTRO
+[![Lista de Pokémon](./capturas-pruebas/FILTRO.png)](./capturas-pruebas/FILTRO.png)
+
+
 
