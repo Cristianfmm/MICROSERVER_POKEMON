@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PokemonService {
-  private apiUrl = 'http://localhost:3000';
+  //private apiUrl = 'http://localhost:3000'; si quiere que funcione de forma local esta es la ip si es publica en AWS en la siguiente linea
+  private apiUrl = 'http://pokemon-backend-env.eba-pgw9vanj.us-east-2.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) {}
 
