@@ -97,5 +97,7 @@ http://pokemon-backend-env.eba-pgw9vanj.us-east-2.elasticbeanstalk.com
 
 ---
 
+# IMPORTANTE SI DESEA REALIZAR LAS PRUEBAS EN LOCAL VAYA A FRONTEND/src/app/services/pokemon.services.ts
+
 ### Corriendo AWS
 [![Lista de Pokémon](./capturas-pruebas/VERIFICACION_AWS.png)](./capturas-pruebas/VERIFICACION_AWS.png)
