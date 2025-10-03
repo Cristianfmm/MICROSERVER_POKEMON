@@ -1,0 +1,47 @@
+.detail-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 15px;
+      color: #444;
+    }
+  
+    img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+  
+      strong {
+        color: #333;
+      }
+    }
+  
+    span {
+      background: #e0e0e0;
+      margin: 0 4px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+  }
+  
+  .type-chip {
+    display: inline-block;
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background: #eee;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
