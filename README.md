@@ -81,4 +81,16 @@ GET /pokemon/:name → Detalle de un Pokémon.
 [![Lista de Pokémon](./capturas-pruebas/FILTRO.png)](./capturas-pruebas/FILTRO.png)
 
 
+---
 
+# AWS
+
+### URLs públicas
+
+### Frontend (Angular en S3):
+
+http://pokemon-frontend-cristian-finandina.s3-website.us-east-2.amazonaws.com
+
+### Backend (Node/Express en Elastic Beanstalk):
+
+http://pokemon-backend-env.eba-pgw9vanj.us-east-2.elasticbeanstalk.com
