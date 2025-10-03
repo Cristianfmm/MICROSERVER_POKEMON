@@ -1,7 +1,7 @@
 <div class="list">
   <h2>Pokémon List (page {{ page }})</h2>
 
-  <!-- 🔎 Buscador -->
+
   <div class="search-box">
     <input
       type="text"
@@ -10,7 +10,7 @@
       (input)="filterPokemons()"
     />
 
-    <!-- 🔽 Sugerencias -->
+  
     <ul *ngIf="filteredPokemons.length && searchTerm" class="suggestions">
       <li *ngFor="let p of filteredPokemons" (click)="selectPokemon(p.name)">
         {{ p.name | titlecase }}
@@ -18,19 +18,19 @@
     </ul>
   </div>
 
-  <!-- Lista en grilla -->
+
   <ul class="grid">
     <li *ngFor="let p of pokemons" (click)="selectPokemon(p.name)">
       {{ p.name | titlecase }}
     </li>
   </ul>
 
-  <!-- Paginación -->
+  
   <div class="pagination">
     <button (click)="loadPage(page - 1)" [disabled]="page <= 1">Prev</button>
     <button (click)="loadPage(page + 1)">Next</button>
   </div>
 
-  <!-- Detalle -->
+ 
   <app-pokemon-detail *ngIf="selectedPokemon" [pokemonName]="selectedPokemon"></app-pokemon-detail>
 </div>

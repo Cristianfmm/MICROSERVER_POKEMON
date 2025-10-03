@@ -10,7 +10,6 @@ app.use(express.json());
 
 const POKEAPI_URL = 'https://pokeapi.co/api/v2';
 
-// 👉 Endpoint lista de pokémon
 app.get('/pokemon', async (req, res) => {
   try {
     const { page = 1, limit = 20 } = req.query;
@@ -22,7 +21,7 @@ app.get('/pokemon', async (req, res) => {
   }
 });
 
-// 👉 Endpoint detalle
+
 app.get('/pokemon/:name', async (req, res) => {
   try {
     const { name } = req.params;
@@ -36,7 +35,7 @@ app.get('/pokemon/:name', async (req, res) => {
 // Exportamos la app para Jest
 module.exports = app;
 
-// Levantar server solo si es directo
+
 if (require.main === module) {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // 👈 necesario para [(ngModel)]
+import { FormsModule } from '@angular/forms'; 
 import { PokemonService } from '../../services/pokemon.service';
 import { PokemonDetailComponent } from '../pokemon-detail/pokemon-detail.component';
 
 @Component({
   selector: 'app-pokemon-list',
   standalone: true,
-  imports: [CommonModule, FormsModule, PokemonDetailComponent], // 👈 añadimos FormsModule
+  imports: [CommonModule, FormsModule, PokemonDetailComponent], 
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss']
 })
@@ -17,7 +17,7 @@ export class PokemonListComponent implements OnInit {
   limit = 20;
   selectedPokemon: string | null = null;
 
-  // 🔎 variables buscador
+  
   searchTerm: string = '';
   filteredPokemons: any[] = [];
 
@@ -31,7 +31,7 @@ export class PokemonListComponent implements OnInit {
     this.pokemonService.getPokemons(this.page, this.limit).subscribe({
       next: (data) => {
         this.pokemons = data.results;
-        this.filteredPokemons = []; // limpiamos sugerencias al cambiar de página
+        this.filteredPokemons = []; 
       },
       error: (err) => console.error('Error cargando lista de Pokémon', err)
     });
@@ -39,18 +39,18 @@ export class PokemonListComponent implements OnInit {
 
   selectPokemon(name: string): void {
     this.selectedPokemon = name;
-    this.searchTerm = ''; // limpiamos input al seleccionar
+    this.searchTerm = ''; 
     this.filteredPokemons = [];
   }
 
-  // ⏮️⏭️ Paginación
+  
   loadPage(newPage: number): void {
     if (newPage < 1) return;
     this.page = newPage;
     this.loadPokemons();
   }
 
-  // 🔎 Filtro buscador
+
   filterPokemons(): void {
     const term = this.searchTerm.toLowerCase();
     this.filteredPokemons = this.pokemons.filter((p: any) =>
