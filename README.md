@@ -1,5 +1,4 @@
 # Finandina Pokedex
-
 Prueba técnica desarrollada en **Node.js (Express)** y **Angular**.  
 La aplicación consume datos de [PokeAPI](https://pokeapi.co/) a través de un **backend propio** y los muestra en un **frontend en Angular** con buscador, lista paginada y detalle de cada Pokémon.
 
@@ -40,35 +39,32 @@ finandina-pokedex/
 ## Instrucciones
 
 ### 1. Clonar repositorio
-```bash
+``bash
 git clone https://github.com/tu-repo/finandina-pokedex.git
 cd finandina-pokedex
 
 ---
 
-2. Levantar el Backend
-
+### 2. Levantar el Backend
 cd backend
 npm install
 npm run dev
-
----
-
 La API corre en: http://localhost:3000
 
-3. Levantar el Frontend
-
+### 3. Levantar el Frontend
 cd frontend
 npm install
 npx ng serve
 
+El frontend corre en: http://localhost:4200
+Endpoints disponibles (Backend)
+GET /pokemon?page=1&limit=20 → Lista de Pokémon paginada.
+GET /pokemon/:name → Detalle de un Pokémon.
+
 ---
 
-El frontend corre en: http://localhost:4200
+# Capturas
 
-Endpoints disponibles (Backend)
-
-GET /pokemon?page=1&limit=20 → Lista de Pokémon paginada.
-
-GET /pokemon/:name → Detalle de un Pokémon.
+### Lista de Pokémon
+[![Lista de Pokémon](./capturas-pruebas/RESPUESTA1.png)](./capturas-pruebas/RESPUESTA1.png)
 
